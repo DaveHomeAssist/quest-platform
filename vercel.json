@@ -1,16 +1,14 @@
 {
+  "buildCommand": "sh build.sh",
+  "outputDirectory": "dist",
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
     { "source": "/mlb/shared/:path*", "destination": "/shared/:path*" },
     { "source": "/festival/shared/:path*", "destination": "/shared/:path*" },
-    { "source": "/mlb", "destination": "/products/mlb/index.html" },
-    { "source": "/mlb/", "destination": "/products/mlb/index.html" },
-    { "source": "/mlb/:path*", "destination": "/products/mlb/:path*" },
-    { "source": "/festival", "destination": "/products/festival/index.html" },
-    { "source": "/festival/", "destination": "/products/festival/index.html" },
-    { "source": "/festival/:path*", "destination": "/products/festival/:path*" },
-    { "source": "/", "destination": "/products/mlb/index.html" }
+    { "source": "/mlb", "destination": "/mlb/index.html" },
+    { "source": "/festival", "destination": "/festival/index.html" },
+    { "source": "/", "destination": "/mlb/index.html" }
   ],
   "headers": [
     {
