@@ -4,8 +4,8 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
-    { "source": "/mlb/shared/:path*", "destination": "/shared/:path*" },
-    { "source": "/festival/shared/:path*", "destination": "/shared/:path*" },
+    { "source": "/mlb/shared/js/:path*", "destination": "/shared/js/:path*" },
+    { "source": "/festival/shared/js/:path*", "destination": "/shared/js/:path*" },
     { "source": "/mlb", "destination": "/mlb/index.html" },
     { "source": "/festival", "destination": "/festival/index.html" },
     { "source": "/", "destination": "/mlb/index.html" }
