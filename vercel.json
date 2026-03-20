@@ -1,7 +1,7 @@
 {
   "buildCommand": "sh build.sh",
   "outputDirectory": "dist",
-  "cleanUrls": true,
+  "cleanUrls": false,
   "trailingSlash": false,
   "rewrites": [
     { "source": "/mlb/shared/js/:path*", "destination": "/shared/js/:path*" },
