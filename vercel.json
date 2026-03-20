@@ -2,12 +2,14 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
-    { "source": "/mlb/shared/(.*)", "destination": "/shared/$1" },
-    { "source": "/festival/shared/(.*)", "destination": "/shared/$1" },
-    { "source": "/mlb/(.*)", "destination": "/products/mlb/$1" },
+    { "source": "/mlb/shared/:path*", "destination": "/shared/:path*" },
+    { "source": "/festival/shared/:path*", "destination": "/shared/:path*" },
     { "source": "/mlb", "destination": "/products/mlb/index.html" },
-    { "source": "/festival/(.*)", "destination": "/products/festival/$1" },
+    { "source": "/mlb/", "destination": "/products/mlb/index.html" },
+    { "source": "/mlb/:path*", "destination": "/products/mlb/:path*" },
     { "source": "/festival", "destination": "/products/festival/index.html" },
+    { "source": "/festival/", "destination": "/products/festival/index.html" },
+    { "source": "/festival/:path*", "destination": "/products/festival/:path*" },
     { "source": "/", "destination": "/products/mlb/index.html" }
   ],
   "headers": [
