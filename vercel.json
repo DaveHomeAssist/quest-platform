@@ -2,7 +2,7 @@
   "buildCommand": "sh build.sh",
   "outputDirectory": "dist",
   "cleanUrls": true,
-  "trailingSlash": true,
+  "trailingSlash": false,
   "rewrites": [
     { "source": "/mlb/shared/js/:path*", "destination": "/shared/js/:path*" },
     { "source": "/festival/shared/js/:path*", "destination": "/shared/js/:path*" },
