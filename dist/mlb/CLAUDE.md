@@ -1,35 +1,27 @@
-# MLB Ballparks Quest — Agent Instructions (Quest Platform)
+# MLB Ballparks Quest — Agent Instructions (Quest Platform / dist)
 
-> Ballpark visit tracker and game scorekeeper with a Phillies-default theme system.
-> This is the platform-hosted copy. Standalone repo: `10-active-projects/mlb-ballparks-quest/`
+> Built output for the MLB product. Source of truth is `products/mlb/`.
 
 ## Project Overview
 
-MLB product within the Quest Platform monorepo. Same two-page PWA as the standalone repo but consuming shared core modules extracted to `quest-platform/shared/js/core/`.
+Distribution copy of the MLB Ballparks Quest product. This directory contains build output. Do not edit files here directly. Make changes in `products/mlb/` instead.
 
 ## Stack
 
-- Vanilla JS (IIFE/namespace module pattern)
-- Shared core modules from `../../shared/js/core/` (storage, utils, device, config, context-store, visits, notes, schedule-core)
-- PWA with service worker and manifest
-- Deployed to Vercel via `vercel.json` at platform root
+See `products/mlb/CLAUDE.md`.
 
 ## Key Decisions
 
-- Product-specific config lives in `products/mlb/config.js`. Shared logic lives in `shared/js/core/`.
-- `<base href="/mlb/">` anchors the product under the platform path structure.
-- Phillies theme remains the locked default.
-- This CLAUDE.md inherits constraints from the standalone repo. Platform-level decisions live in the parent quest-platform CLAUDE.md when it exists.
+- This is a dist artifact. All source changes go through `products/mlb/`.
 
 ## Documentation Maintenance
 
-- **Issues**: Track in CLAUDE.md issue tracker table below
-- **Session log**: Append to `/Users/daverobertson/Desktop/Code/95-docs-personal/today.csv` after each meaningful change
+- **Issues**: Tracked in `products/mlb/CLAUDE.md`
+- **Session log**: N/A (dist copy)
 
 ## Issue Tracker
 
-| ID | Severity | Status | Title | Notes |
-|----|----------|--------|-------|-------|
+See `products/mlb/CLAUDE.md`.
 
 ## Architecture
 
